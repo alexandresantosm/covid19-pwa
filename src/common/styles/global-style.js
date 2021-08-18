@@ -26,4 +26,16 @@ export const GlobalStyle = createGlobalStyle`
     background-size: cover;
     background-position: center center;
   }
+
+  .mb-2 {
+    margin-bottom: 1rem;
+  }
+
+  .pt-2 {
+    padding-top: 1rem;
+  }
+
+  .cursor {
+    cursor: pointer;
+  }
 `;
