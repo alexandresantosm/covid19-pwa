@@ -49,6 +49,10 @@ function Panel({ updatedAt, onChange, data, country, getCovidData }) {
     </div>
   );
 
+  const handleOnClickRefresh = (country) => {
+    getCovidData(country);
+  };
+
   return (
     <Card>
       <CardPanelContentStyled>
@@ -56,12 +60,20 @@ function Panel({ updatedAt, onChange, data, country, getCovidData }) {
           <Typography variant="h5" component="span" color="primary">
             COVID19
           </Typography>
-          <Typography variant="h6" component="span" color="primary">
+          <Typography variant="h6" component="p">
             Painel Coronavírus
           </Typography>
-          <Typography variant="body2" component="span" color="primary">
-            Atualizado em: {updatedAt}
-          </Typography>
+          <div className="updatedAt">
+            <Typography variant="body2" component="span" color="secondary">
+              Atualizado em: {updatedAt}
+            </Typography>
+            <img
+              className="cursor"
+              src={RefreshIcon}
+              alt="Atualizar"
+              onClick={handleOnClickRefresh}
+            />
+          </div>
           <div className="pt-2">
             <Select onChange={onChange} value={country}>
               {COUNTRIES.map(renderCountries)}
