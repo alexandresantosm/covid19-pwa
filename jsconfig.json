@@ -10,5 +10,6 @@
       "common/*": ["./common/*"],
       "services/*": ["./services/*"]
     }
-  }
+  },
+  "exclude": ["node_modules", "build"]
 }
