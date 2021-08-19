@@ -1,4 +1,4 @@
-# Covid19 App DIO
+# PWA to Show Covid19 Cases
 
 This project was Progressive Web Application with React to map COVID19 data around the world.
 
