@@ -1,5 +1,5 @@
 import { Button } from "./Button";
-import { Card, CardContent } from "./Card, ";
+import { Card, CardContent } from "./Card";
 import { Grid } from "./Grid";
 import { MenuItem } from "./MenuItem";
 import { Select } from "./Select";
