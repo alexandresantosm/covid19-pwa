@@ -11,6 +11,21 @@ export const CardPanelContentStyled = styled(CardContent)`
     gap: 0.5rem;
     align-items: center;
   }
+
+  @media (max-width: 400px) {
+    flex-direction: column;
+
+    .pt-2 {
+      div {
+        width: 100%;
+      }
+    }
+
+    button {
+      margin-top: 1rem;
+      width: 100%;
+    }
+  }
 `;
 
 export const ItemStyled = styled.div`
